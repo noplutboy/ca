@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="MyCams">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="apple-touch-icon" href="icon.jpg">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css?v=2">
+    <title>MyCams</title>
+</head>
+
+<body>
+    <header>
+        <select id="gender">
+    <option value="">Все</option><option value="f">Девушки</option>
+    <option value="m">Парни</option><option value="c">Пары</option><option value="t">Trans</option>
+  </select>
+        <form id="sf" action="#"><input id="tag" type="search" enterkeyhint="search" placeholder="Поиск: тег или ник" autocapitalize="off" autocorrect="off" spellcheck="false"></form>
+        <button id="go">↻</button>
+    </header>
+    <main id="grid"></main>
+    <button id="more">Ещё</button>
+    <div id="player" hidden>
+        <div class="bar"><button id="close">✕</button><span id="title"></span><button id="fav">☆</button></div>
+        <iframe id="frame" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <script src="app.js?v=2"></script>
+</body>
+
+</html>
